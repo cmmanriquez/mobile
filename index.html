@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hahmlet:wght@100;200;300;400&family=Kurale&family=Outfit:wght@100;200;300&display=swap" rel="stylesheet">
+  <script src="https://www.google.com/recaptcha/api.js?render={6LdT2fkkAAAAAGWDg53Om873by1nFCUe9Oq8oo7c
+  }"></script>
+  <script>
+      grecaptcha.ready(function () {
+          grecaptcha.execute('{your-site-key}', {action: 'submit'}).then(function (token) {
+              console.info("got token: " + token);
+              document.getElementById('g-recaptcha-response').value = token;
+          });
+      });
+  </script>
+  <title>Desplazamiento y cambio de colores</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <ul class="nav-list">
+        <li><a href="index.html#Frontend" class="nav-link">frontend</a></li>
+        <li><a href="index.html#ArtProject" class="nav-link">art projects</a></li>
+        <li><a href="#" class="nav-link">about</a></li>
+        <li><a href="#" class="nav-link">contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="container_jarrones">
+    <img src="./img/indexSegundo01.gif" alt="secuencia de imágenes donde se destruye un jarrón">
+    <img src="./img/indexSegundo02.gif" alt="secuencia de imágenes donde se destruye un jarrón">
+  </div>
+  <main>
+    <div id="Frontend">
+      <div class="container_fe01">
+        <div class="image_frontend container_fe01_01">
+          <img src="./img/lascelebraciones.png" alt="Imagen de referencia de un sitio web">
+          <div class="overlay">
+            <a href="http://www.lascelebraciones.com" target="_blank">Escuela Las Celebraciones</a>
+          </div>
+        </div>
+        <div class="image_frontend container_fe01_02">
+          <img src="./img/lucila.webp" alt="Imagen de referencia de un sitio web">
+          <div class="overlay">
+            <a href="http://www.lucilasafdie.com" target="_blank">Lucila Safdie</a>
+          </div>
+        </div>
+      </div>
+      <div class="container_fe02">
+        <div class="image_frontend container_fe02_01">
+          <img src="./img/limay.png" alt="Imagen de referencia de un sitio web">
+          <div class="overlay">
+            <a href="http://www.limaydenim.com" target="_blank">Limay Denim</a>
+          </div>
+        </div>
+        <div class="image_frontend container_fe02_02">
+          <img src="./img/clselect.png" alt="Imagen de referencia de un sitio web">
+          <div class="overlay">
+            <a href="http://www.clselect.com.ar" target="_blank">Consultora CL Select</a>
+          </div>
+        </div>
+      </div>
+      <div class="container_fe03">
+        <div class="image_frontend">
+          <img src="./img/gotas.webp" alt="Imagen de referencia de un sitio web">
+          <div class="overlay">
+            <a href="http://www.gotas-de-vida-herbal.myshopify.com" target="_blank">Gotas de Vida</a>
+          </div>
+      </div>
+    </div>
+    <div id="ArtProject">
+      <img src="./img/frutera.jpeg" alt="Imagen de un objeto de cerámica hecho a mano">
+      <img src="./img/ig03.png" alt="Imagen de un objeto de cerámica hecho a mano">
+      <img src="./img/arcillaRoja.jpeg" alt="Imagen de un objeto de cerámica hecho a mano">
+      <video autoplay muted preload="auto" playsinline loop class="artProject_video02">
+        <source src="./img/jarron.mp4" type="video/mp4">
+        <source src="./img/jarron.ogg" type="video/ogg">
+        <p>Tu navegador no admite la reproducción de videos.</p>
+      </video>
+      <video autoplay muted preload="auto" playsinline loop class="artProject_video01">
+        <source src="./img/destroy.mp4" type="video/mp4">
+        <source src="./img/destroy.ogg" type="video/ogg">
+        <p>Tu navegador no admite la reproducción de videos.</p>
+      </video>
+    </div>
+  </main>
+  <section id="About">
+    <img src="./img/perfil.jpeg" alt="">
+    <div>
+      <h2>I have a background as a visual artist, with a Bachelor's degree in Fine Arts from UNLP. <br> Despite occasional creative gaps, I strive to stay connected to art in any way I can.</h2>
+      <h2>Currently, I work on freelance projects while teaching web development.</h2>
+    </div>
+  </section>
+  <footer id="Footer">
+    <div class="wave">
+      <span style="--i:1">w</span>
+      <span style="--i:2">a</span>
+      <span style="--i:3">n</span>
+      <span style="--i:4">n</span>
+      <span style="--i:5">a</span>
+      <span class="space"></span>
+      <span style="--i:6">w</span>
+      <span style="--i:7">o</span>
+      <span style="--i:8">r</span>
+      <span style="--i:9">k</span>
+      <span style="--i:9">?</span>
+     </div>
+    <form action="enviar_email.php" method="post" class="container__index-form">
+      <label for="nombre" name="nombre">Name</label>
+      <input type="text" name="nombre" required>
+      <label for="email" name="email">Email</label>
+      <input type="email" name="email" required>
+      <label for="message" name="message">Message</label>
+      <textarea name="mensaje" required rows="8"></textarea>
+      <input type="submit" value="Let´s Talk" class="btn_propio">
+    </form>
+    <div class="redes">
+      <a target="_blank" href="https://www.linkedin.com/in/camilamunoz-frontend/"><svg xmlns="http://www.w3.org/2000/svg" height="1.3em" viewBox="0 0 448 512">
+        <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+        <path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z" fill="#3434B0"/>
+      </svg>
+      </a>
+      <a target="_blank" href="https://github.com/cmmanriquez"><svg xmlns="http://www.w3.org/2000/svg" height="1.3em" viewBox="0 0 496 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" fill="#3434B0"/></svg></a>
+    </div>
+  </footer>
+  
+  
+  <script src="script.js"></script>
+
+</body>
+</html>
