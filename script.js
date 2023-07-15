@@ -1,6 +1,6 @@
 window.addEventListener('scroll', function () {
   if (window.matchMedia('(max-width: 991px)').matches) {
-    // Scroll points para pantallas de máximo 991px
+    // max 991px
     var scrollPoints = [
       { scroll: 0, bgColor: '#B8B8FF', textColor: '#3434B0' },
       { scroll: 600, bgColor: '#1B3644', textColor: '#FFA6D9' },
@@ -9,7 +9,6 @@ window.addEventListener('scroll', function () {
       { scroll: 4400, bgColor: '#B8B8FF', textColor: '#3434B0' }
     ];
 
-    // Resto del código para pantallas de máximo 991px
     var body = document.body;
     var navbar = document.querySelector('.navbar');
     var navLinks = document.querySelectorAll('.nav-link');
@@ -41,7 +40,7 @@ window.addEventListener('scroll', function () {
 
     navbar.style.backgroundColor = 'transparent';
   } else {
-    // Scroll points para pantallas de mínimo 992px
+    // min 992px
     var scrollPoints = [
       { scroll: 0, bgColor: '#B8B8FF', textColor: '#3434B0' },
       { scroll: 600, bgColor: '#1B3644', textColor: '#FFA6D9' },
@@ -50,7 +49,6 @@ window.addEventListener('scroll', function () {
       { scroll: 4400, bgColor: '#B8B8FF', textColor: '#3434B0' }
     ];
 
-    // Resto del código para pantallas de mínimo 992px
     var body = document.body;
     var navbar = document.querySelector('.navbar');
     var navLinks = document.querySelectorAll('.nav-link');
@@ -84,10 +82,32 @@ window.addEventListener('scroll', function () {
   }
 });
 
-
-  
   // video
-  const video = document.querySelector('video');
-  video.controls = false;
-  
-  
+const video = document.querySelector('video');
+video.controls = false;
+
+//formulario
+document.addEventListener('DOMContentLoaded', function() {
+  var form = document.querySelector('.container__index-form');
+  var successMessage = document.querySelector('.success-message');
+
+  form.addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    // Realizar la solicitud al servidor utilizando fetch
+    fetch('enviar_email.php', {
+      method: 'POST',
+      body: new FormData(form)
+    })
+    .then(function(response) {
+      return response.text();
+    })
+    .then(function(data) {
+      // Mostrar el mensaje emergente
+      successMessage.style.display = 'block';
+    })
+    .catch(function(error) {
+      console.error('Error al enviar el formulario:', error);
+    });
+  });
+});
