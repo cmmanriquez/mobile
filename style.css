@@ -34,7 +34,7 @@ header nav{
 }
 header nav ul li a{
     font-family: 'Outfit', sans-serif;
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 200;
     color: #3434B0;
 }
@@ -60,10 +60,9 @@ header .navbar .nav-list{
 /* ------------frontend------------ */
 #Frontend a{
     color: #FFA6D9;
-    text-decoration: underline;
-    font-size: 12px;
+    font-size: 14px;
     font-family: 'Hahmlet', serif;
-    font-weight: 100;
+    font-weight: 200;
 }
 #Frontend img{
     width: 300px;
@@ -159,14 +158,14 @@ header .navbar .nav-list{
 #Footer .wave{
     position: relative;
     -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0,0,0,.2));
-    font-size: 60px;
+    font-size: 50px;
     margin-bottom: 60px;
     display: flex;
     justify-content: center;
     max-width: 80%;
 }
 #Footer .wave .space{
-    width: 40px;
+    width: 140px;
 }
 #Footer .wave span{
     position: relative;
@@ -354,6 +353,9 @@ header .navbar .nav-list{
     }
     #Footer form .btn_propio{
         margin-top: 30px;
+    }
+    #Footer .wave{
+        font-size: 60px;
     }
     #Footer .wave .space{
         width: 140px;
