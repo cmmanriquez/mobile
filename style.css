@@ -20,6 +20,10 @@ a img {
 :focus {
   outline: 0;
 }
+html{
+    scroll-behavior: smooth;
+}
+  
 body{
     background-color: #B8B8FF;
     color: #3434B0;
@@ -59,10 +63,11 @@ header .navbar .nav-list{
 
 /* ------------frontend------------ */
 #Frontend a{
-    color: #FFA6D9;
+    color: #FFC8E7;
     font-size: 14px;
     font-family: 'Hahmlet', serif;
     font-weight: 200;
+    border-bottom: 1px solid #FFC8E7;
 }
 #Frontend img{
     width: 300px;
@@ -117,14 +122,14 @@ header .navbar .nav-list{
     margin-top: 40px;
 }
 #ArtProject .artProject_video01{
-    margin: 40px 0;
+    margin: 40px 0 0 50px;
     align-self: center;
     overflow-x: hidden;
     max-width: 80%;
 }
 #ArtProject .artProject_video02{
     max-width: 80vw;
-    align-self: center;
+    align-self: flex-start;
     margin-top: 40px;
 }
 
@@ -158,7 +163,7 @@ header .navbar .nav-list{
 #Footer .wave{
     position: relative;
     -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0,0,0,.2));
-    font-size: 50px;
+    font-size: 40px;
     margin-bottom: 60px;
     display: flex;
     justify-content: center;
@@ -260,6 +265,14 @@ header .navbar .nav-list{
 #Footer .redes{
     display: flex;
     gap: 30px;
+    margin-bottom: 16px;
+}
+#Go_up{
+    display: flex;
+    justify-content: end;
+}
+#Go_up a svg{
+    margin: 0 30px 60px 0;
 }
 
 
