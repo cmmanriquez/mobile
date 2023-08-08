@@ -4,9 +4,9 @@ window.addEventListener('scroll', function () {
     var scrollPoints = [
       { scroll: 0, bgColor: '#B8B8FF', textColor: '#3434B0' },
       { scroll: 600, bgColor: '#1B3644', textColor: '#FFA6D9' },
-      { scroll: 2600, bgColor: '#7D342A', textColor: '#E7E8D1' },
-      { scroll: 4500, bgColor: '#DCC5EB', textColor: '#64131A' },
-      { scroll: 5100, bgColor: '#B8B8FF', textColor: '#3434B0' }
+      // { scroll: 2600, bgColor: '#7D342A', textColor: '#E7E8D1' },
+      { scroll: 2400, bgColor: '#DCC5EB', textColor: '#64131A' },
+      { scroll: 3000, bgColor: '#B8B8FF', textColor: '#3434B0' }
     ];
 
     var body = document.body;
@@ -44,9 +44,9 @@ window.addEventListener('scroll', function () {
     var scrollPoints = [
       { scroll: 0, bgColor: '#B8B8FF', textColor: '#3434B0' },
       { scroll: 600, bgColor: '#1B3644', textColor: '#FFA6D9' },
-      { scroll: 2300, bgColor: '#7D342A', textColor: '#E7E8D1' },
-      { scroll: 4000, bgColor: '#DCC5EB', textColor: '#64131A' },
-      { scroll: 4900, bgColor: '#B8B8FF', textColor: '#3434B0' }
+      // { scroll: 2300, bgColor: '#7D342A', textColor: '#E7E8D1' },
+      { scroll: 2200, bgColor: '#DCC5EB', textColor: '#64131A' },
+      { scroll: 3000, bgColor: '#B8B8FF', textColor: '#3434B0' }
     ];
 
     var body = document.body;

@@ -66,7 +66,7 @@ header .navbar .nav-list{
     padding-top: 100px;
 }
 #Frontend  h2{
-    font-size: 16px;
+    font-size: 20px;
     font-family: 'Hahmlet', serif;
     margin: 0 0 30px 30px;
     font-weight: 200;
@@ -120,7 +120,7 @@ header .navbar .nav-list{
 }
 
 /* ------------art projects------------ */
-#ArtProject h2{
+/* #ArtProject h2{
     padding: 10px;
     margin: 0;
     font-size: 16px;
@@ -154,11 +154,11 @@ header .navbar .nav-list{
     max-width: 80vw;
     align-self: flex-start;
     margin-top: 40px;
-}
+} */
 
 /* ------------about------------ */
 #About{
-    padding-top: 50px;
+    padding-top: 250px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -198,7 +198,6 @@ header .navbar .nav-list{
 #Footer .wave span{
     position: relative;
     display: inline-block;
-    color: #3434B0;
     animation: waviy 1s infinite;
     animation-delay: calc(.1s * var(--i));
     font-family: 'Kurale', serif;
